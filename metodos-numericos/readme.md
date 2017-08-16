@@ -114,3 +114,19 @@ x=[0:0.05:10];
 y=log(x);  
 plot(x,y)  
 grid  
+
+## Exercicios Matlab
+### 1
+a = 14.75;  
+b = -5.92;  
+c = 61.4;  
+d = 0.6;  
+s = a + ((a*b)/c) * ((a+d)^2)/sqrt(abs(a*b));  
+s  
+### 2 
+a = 5*pi/9;  
+b = pi/7;  
+esquerda = sin(a)*cos(b);  
+esquerda  
+direita = [sin(a-b)+sin(a+b)]/2;  
+direita  
