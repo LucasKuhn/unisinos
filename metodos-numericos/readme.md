@@ -43,11 +43,11 @@ v(i)=v(i-1)+4;
 end  
 v'  
 --- OU ---            
-v(1)=2
-for i=1:5
-v(i+1)=v(i)+4;
-end
-v'  
+v(1)=2  
+for i=1:5  
+v(i+1)=v(i)+4;  
+end  
+v'   
 ### Para o vetor
            3
            9
@@ -61,10 +61,17 @@ v'
 for i=2:7  
 v(i)=v(i-1)*3;  
 end  
-v'
+v'  
 ---- or ----  
 v(1)=3;  
 for i=1:6  
 v(i+1)=v(i)*3;  
 end  
 v'  
+
+### soma de 1 ate 20 de i^3
+sum = 0;  
+for i=1:20  
+sum = sum + i^3;  
+end  
+sum  
