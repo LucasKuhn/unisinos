@@ -75,3 +75,42 @@ for i=1:20
 sum = sum + i^3;  
 end  
 sum  
+
+### soma de 1/n^p de 1 até infinito
+% 0 < p <= 1 --> diverge  
+% p > 1 --> converge  
+  
+sum = 0;    
+for i=1:100000  
+sum = sum+1/i^2  
+end    
+sum    
+
+### Graficos 
+  
+x=[-10:10];  
+y=2*x+3;  
+plot(x,y,'r-.d') # red, dash, dot, diamond - also available o, s)  
+grid  
+xlabel('eixo dos x')  
+ylabel('eixo dos y')  
+title('grafico de y=2x+3')  
+----------------------------------  
+x=[-10:10];
+y=x.^2-2*x+3;
+plot(x,y)
+grid
+xlabel('eixo dos x')
+ylabel('eixo dos y')
+title('grafico de y=x²+2x+3')
+### Grafico mais suave, encrementando a cada 0.05
+x=[-10:0.05:10];  
+y=cos(x);  
+plot(x,y)  
+grid  
+### Funcoes com restrição - Logaritmos e funções com raiz quadrada
+Não possuem negativo, começa em 0:  
+x=[0:0.05:10];  
+y=log(x);  
+plot(x,y)  
+grid  
