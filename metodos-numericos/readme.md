@@ -15,7 +15,7 @@
 for i=1:10  
 v(i)=i^3;  
  end  
- v'  
+ v'  # Apostrofe só pra printar em forma de coluna -.-
 
 ### Para a matriz Aij=2i+j
 A =
@@ -28,3 +28,4 @@ for j=1:3
 A(i,j)=2*i+j;  
 end;  
 end;  
+A
