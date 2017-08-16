@@ -95,15 +95,15 @@ grid
 xlabel('eixo dos x')  
 ylabel('eixo dos y')  
 title('grafico de y=2x+3')  
-----------------------------------  
-x=[-10:10];
-y=x.^2-2*x+3;
-plot(x,y)
-grid
-xlabel('eixo dos x')
-ylabel('eixo dos y')
-title('grafico de y=x²+2x+3')
-### Grafico mais suave, encrementando a cada 0.05
+ ~~~~~   
+x=[-10:10];  
+y=x.^2-2*x+3;  
+plot(x,y)  
+grid  
+xlabel('eixo dos x')  
+ylabel('eixo dos y')  
+title('grafico de y=x²+2x+3')  
+### Grafico mais suave, encrementando a cada 0.05  
 x=[-10:0.05:10];  
 y=cos(x);  
 plot(x,y)  
