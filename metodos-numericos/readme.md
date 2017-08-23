@@ -165,12 +165,12 @@ end
 x'  
 **Exemplo 2: 2x - senx + 4 = 0**  
 1) Fazer o grafico no Matlab para descobrir o intervalo:  
-```
+``
 x=[-3:-2];  
 y=2*x-sin(x)+4;  
 plot(x,y)  
 grid  
-```
+``
 2) Fazer a tabela Xn | Xn+1 = Xn - (f(xn)/f'(xn) | Xn+1 - Xn < 0.5x10^-3  
 3) Checar a approximação da table com um for loop no matlab:  
 ```
