@@ -132,13 +132,21 @@ esquerda
 direita = [sin(a-b)+sin(a+b)]/2;  
 direita  
 
-## Resolução Numérica de Equiações não-lineares
+## Aula 3 - Resolução Numérica de Equações não-lineares
 ### Isolamento das raizes
-Se em um ponto A o sinal for oposto de um ponto B, ela passa por 0 um numero ímpar de vezes. Se o sinal for igual, ou não passa nenuma vez ou passa um numero par de vezes. 
+Se em um ponto A o sinal for oposto de um ponto B, ela passa por 0 um numero ímpar de vezes. Se o sinal for igual, ou não passa nenuma vez ou passa um numero par de vezes.
+
 ### Com Gráfico
-f(x) = x³- 9x + 3  
+#### a) f(x) = x³- 9x + 3  
 No Matlab:            
 x=[-5:0.05:5];  
 y=x.^3-9*x+3;  
+plot(x,y)  
+grid  
+
+#### b) f(x) = √x - 5e^(-x)
+No Matlab:  
+x=[0:0.05:2];  
+y=sqrt(x)-5*exp(-x);  
 plot(x,y)  
 grid  
