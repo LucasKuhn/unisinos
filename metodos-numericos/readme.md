@@ -1,5 +1,4 @@
-# loop for ( -.- )
-
+# Aula 2 - Loop For (-.-)
 ### Para fazer o vetor:  
            1
            8
@@ -132,7 +131,7 @@ esquerda
 direita = [sin(a-b)+sin(a+b)]/2;  
 direita  
 
-## Aula 3 - Resolução Numérica de Equações não-lineares
+# Aula 3 - Resolução Numérica de Equações não-lineares
 ### Isolamento das raizes
 Se em um ponto A o sinal for oposto de um ponto B, ela passa por 0 um numero ímpar de vezes. Se o sinal for igual, ou não passa nenuma vez ou passa um numero par de vezes.
 
@@ -150,3 +149,12 @@ x=[0:0.05:2];
 y=sqrt(x)-5*exp(-x);  
 plot(x,y)  
 grid  
+
+### Metodo de Newton-Raphson
+Bla bla bla whiskas sachê - Checar as coisas tal etc  
+**No Matlab:**  
+x(1) = 0.2;  
+for i=1:2  
+    x(i+1)=x(i)-((x(i)^3-9*x(i)+3)/(3*x(i)^2-9));  
+end  
+x'  
