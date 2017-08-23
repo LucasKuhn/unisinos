@@ -1,3 +1,8 @@
+# Aula 1 - Comandos basicos 
+clear  
+clc  
+format long   
+format short  
 # Aula 2 - Loop For (-.-)
 ### Para fazer o vetor:  
            1
