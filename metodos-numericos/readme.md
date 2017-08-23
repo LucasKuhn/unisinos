@@ -157,9 +157,25 @@ grid
 
 ### Metodo de Newton-Raphson
 Bla bla bla whiskas sachê - Checar as coisas tal etc  
-**No Matlab:**  
+**Exemplo 1 - No Matlab:**  
 x(1) = 0.2;  
 for i=1:2  
     x(i+1)=x(i)-((x(i)^3-9*x(i)+3)/(3*x(i)^2-9));  
 end  
 x'  
+**Exemplo 2: 2x - senx + 4 = 0**  
+1) Fazer o grafico no Matlab para descobrir o intervalo:  
+```
+x=[-3:-2];  
+y=2*x-sin(x)+4;  
+plot(x,y)  
+grid  
+```
+2) Fazer a tabela Xn | Xn+1 = Xn - (f(xn)/f'(xn) | Xn+1 - Xn < 0.5x10^-3  
+3) Checar a approximação da table com um for loop no matlab:  
+```
+x=[-3:-2];
+y=2*x-sin(x)+4;
+plot(x,y)
+grid
+```
