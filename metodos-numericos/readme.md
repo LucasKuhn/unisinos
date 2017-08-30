@@ -181,3 +181,23 @@ for i=1:2
 end
 x'
 ```
+# Aula 4 - Método da Iteração Linear
+O metodo consiste em transformar uma função f(x)=0 em uma equivalente x=f(x), e a partir de uma aproximação inicial gerar uma sequencia e aproximações para x pela relação Xn+1 = f(Xn) (WTF?)
+A função F(x) é chamada de função de iteração para a equação f(x)=0
+
+### Escolha de uma função de iteração -- PRECISA SABER 'NÃO PODE USAR FORMULARIO' hueueh
+A partir de uma f(x) pode-se obter várias F(x) [lol], porém nem todas poderão ser utilizadas. Deve-se checar se a função escohida conduzirá o processo convergente [orly]:  
+- f(x) e F'(x) são continuas no intervalo,  
+- |F'(x)|<=1, para todo x no intervalo   
+- x1 pertence ao intervalo  
+Então a sequencia gerada pelo processo iterativo Xn+1 = F(Xn) converge para x.  
+
+### Exemplo 1 no MatLab
+```
+    format long
+    x(1) = 0.8;
+    for i = 1:4
+        x(i+1) = sqrt(sin(x(i)));
+    end
+    x'
+```
